@@ -1,0 +1,50 @@
+1. 数组  Array   连续地址存储
+访问很快，直接跳转至索引
+插入、删除很慢， 需要移动元素
+
+2. 链表 LinkedList  随机地址存储
+插入删除很快
+访问查询很慢
+
+3. 哈希表 HashMap  python中的字典 
+查询，删除，插入很快
+
+4. 队列 Queue  先入先出  双端队列  用在BFS题目
+两种表示方法：
+    1、List  []
+    2、deque 双端队列   append()  pop()  appendleft() popleft()   常使用
+
+5. 栈 Stack   先入后出  用在DFS题目
+表示方式：
+    1、deque
+    2、List  append()  pop()  常使用
+
+6.堆 Heap  (大堆，小堆)  顶端时最大值还是最小值  前n个最大最小的题目
+导包 from heapq import heapify,heappush,heappop
+常用的函数 heapify()  heappush()  heappop()  nlargest()  nsmallest()
+小堆：
+    a = [1,2,3]
+    heapify(a) -> 小堆 a=[1,2,3]
+    heappush(a,4)  -> a = [1,2,3,4]
+                           头    尾
+    heappop(a)  -> 1  a = [2,3,4]
+    nlargest(2,a)  前两个最大的值  [3,4]
+    nsmallest(2,a) 前两个最小的值  [2,3] 
+大堆：  （没有针对于大堆的函数，一般把其加符号变成小堆，然后用小堆的函数处理，最后的结果乘以-1）
+
+7.树 Tree  父子关系   BFS DFS题目
+找不到明确父子关系的是环
+节点
+根结点：最初始的节点
+叶子结点：没有孩子节点
+高度：节点到叶子结点饿最长路径
+深度：根结点开始到该节点的边数
+层：行
+树的高度：根结点到叶子结点的最长路径
+二叉树：！！！
+    遍历：
+    前序遍历：当前，左，右
+    中序遍历：左，当前，右
+    后序遍历：左，右，当前
+
+

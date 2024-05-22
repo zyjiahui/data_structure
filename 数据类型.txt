@@ -1,0 +1,80 @@
+
+1.列表List  a=[1,2,3,4,5]    增删改查
+查找：index索引 a[0] = 1
+增加：a.append(6)  ->   a=[1,2,3,4,5,6]
+更新：a[0] = 9   ->  a = [9,2,3,4,5,6]
+删除：a.pop(0)  ->  a = [2,3,4,5,6]  此操作会返回删除的数字
+长度：len(a)
+最大：max(a)
+最小：min(a)
+翻转数组：a.reverse()
+删除数组元素：a.clear()
+包含：3 in a 返回布尔
+切片操作：slice  a[0:2]   a[-1]最后一个元素 
+遍历：
+    for x in a:
+        print(x)
+
+    for index in range(len(a)):
+        print(a[index])
+
+列表推导式：
+    b = [i*i for i in a]
+    b = [i*i if i<3 else i for i in a]
+
+
+2.元组Tuple  a = ()  查
+只有一个元素时，加逗号  a = (3,)
+in
+slice
+
+
+3.集合Set  a = {1,2,3,4,5}  无序的，元素唯一，增删改查
+增：a.add()
+删:a.remove()  返回删除之后的新集合
+改:a.updata(1)  a.updata({2,3})
+查:in 
+- | &  ^
+a - b：a有b没有的
+a | b：合并
+a & b：都有的
+a ^ b：除去都有的
+
+
+4.字典 Dictionary  dict = {key:value}  dict = {"name":Liming,"age":18}   增删改查，无序
+查：用key查
+增：dict["platform"] = youtube   直接加
+改：dict["platform"] = bilibili  直接改
+删：dict.pop("key")
+遍历：
+    dict = {"name":Liming,"age":18}
+    for key in dict:
+        print(key)
+
+    for value in dict.values():
+        print(value)
+
+    for k,v in dict.items():
+        print(k,v)
+
+
+5.字符串String  S = "Hello World"  字符组成的数组
+切片
+len(S)
+max(S)
+min(S)
+某字符有多少个：count("H")  
+都是大写字母吗：True & False   S.isupper()  
+都是小写字母吗：True & False   S.islower()
+都是数字吗：True & False      S.isdigit()
+都变成小写：S.lower()
+都变成大写：S.upper()
+去掉前后的空格：S.strip()
+去掉左边的空格：S.lstrip()
+去掉右边的空格：S.rstrip()
+大小写互换：S.swapcase()
+替换：S.replace("l","e")  l换成e
+分割：S.split(" ")  按空格分割
+
+
+
